@@ -1,0 +1,4 @@
+*.out
+*.hs
+*.java
+**/by_learners/
