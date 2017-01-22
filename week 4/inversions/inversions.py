@@ -1,38 +1,6 @@
 # Uses python3
 import sys
 
-# def merge(a, b):
-#     i = 0
-#     j = 0
-#
-#     while i < len(a) and j < len(b):
-#         if a[i] <= b[j]:
-#             res.append(a[i])
-#             i += 1
-#         else:
-#             res.append(b[j])
-#             j += 1
-#
-#     if i < a_len:
-#         res += a[i:]
-#
-#     if j < b_len:
-#         res += b[j:]
-#
-#     return res
-#
-# def merge_sort(arr):
-#     length = len(arr)
-#
-#     if length == 1:
-#         return arr
-#
-#     m = length // 2
-#     half1 = merge_sort(arr[:m])
-#     half2 = merge_sort(arr[m:])
-#
-#     return merge(half1, half2)
-
 def merge(a, b, inversions):
     i = 0
     j = 0
@@ -85,7 +53,7 @@ def test_solution():
 if __name__ == '__main__':
     test_solution()
 
-    # input = sys.stdin.read()
-    # n, *a = list(map(int, input.split()))
-    # b = n * [0]
-    # print(get_number_of_inversions(a, b, 0, len(a)))
+    input = sys.stdin.read()
+    n, *a = list(map(int, input.split()))
+    b = n * [0]
+    print(get_number_of_inversions(a, b, 0, len(a)))
